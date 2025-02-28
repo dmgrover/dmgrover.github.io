@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
 body {
-    background-color: black;
+    background-color: white;
     font-family: "Comic Sans MS", Comic Sans, serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 @font-face {
     font-family: redOctoberFont;
@@ -19,6 +23,73 @@ body {
 .black {
     color: black
 }
+.sitetitle {
+    color: black;
+    float: left;
+    text-align: center;
+    display: block;
+    font-family: "Geologica", Geologica, serif;
+    font-weight: 900;
+    font-size: 24pt;
+}
+.emailtext {
+    color: white;
+    float: left;
+    text-align: center;
+    display: block;
+    font-family: "Geologica", Geologica, serif;
+    font-weight: 600;
+    font-size: 12pt;
+}
+.bigheading {
+    color: white;
+    font-family: "Geologica", Geologica, serif;
+    font-weight: 900;
+    font-size: 90pt;
+    line-height: 90pt;
+    margin: 20px;
+}
+.bigheadingblack {
+    color: black;
+    font-family: "Geologica", Geologica, serif;
+    font-weight: 900;
+    font-size: 90pt;
+    line-height: 70pt;
+    text-align: right;
+    margin: 20px;
+}
+.midheadingblack {
+    color: black;
+    font-family: "Geologica", Geologica, serif;
+    font-weight: 900;
+    font-size: 90pt;
+    line-height: 70pt;
+    text-align: center;
+    margin: 20px;
+    padding: 110px;
+}
+.bodywhite {
+    color: white;
+    font-family: "Geologica", Geologica, serif;
+    font-weight: 600;
+    font-size: 24pt;
+    width: 50%;
+    margin: 20px;
+}
+.bodyblack {
+    color: black;
+    font-family: "Geologica", Geologica, serif;
+    font-weight: 600;
+    font-size: 24pt;
+    text-align: right;
+    margin: 20px;
+}
+.navbartext {
+    color: black;
+    font-family: "Geologica", Geologica, serif;
+    font-weight: 600;
+    font-size: 16pt;
+}
 .box {
     height: 200px;
     width: 500px;
@@ -28,23 +99,71 @@ body {
     background-color: red;
 }
 .whitebox {
-    height: 360px;
+    height: 420px;
     width: 100%;
     background-color: white;
+    padding: 0px;
+    display: inline-block;
+}
+.rightbox {
+    height: 90%;
+    width: 50%;
     padding: 20px;
+    margin-right: 0%;
+    display: block;
+    float: right;
+}
+.centerbox {
+    margin: 0 auto;
+    height: 100%;
+    width: 35%;
+    padding: 20px;
+    display: block;
+}
+.herobox {
+    height: 580px;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    display: inline-block;
+    background-image: url(stupidLLM.svg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+.herobox img {
+    width: 20%;
+    height: 50%;
+    display: inline-block;
+    padding: 20px;
+    vertical-align: middle;
+    float: right;
 }
 .blackbox {
-    height: 360px;
+    height: 420px;
     width: 100%;
     background-color: black;
     padding: 20px;
 }
+.footerbox {
+    height: 120px;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    margin: 0px;
+    display: inline-block;
+    text-align: center;
+}
+
 .headerbox {
     height: 80px;
     width: 100%;
     background-color: white;
-    padding: 20px;
+    padding: 0px;
     margin: 0px;
+    display: inline-block;
+    text-align: center;
 }
 .headerbutton {
     height: 10px;
@@ -52,14 +171,132 @@ body {
     background-color: navajowhite;
     padding: 20px;
     margin: auto;
+    text-align: center;
+   
 }
-ul {
+.nav {
     list-style-type: none;
-    margin: 10px;
-    padding: 5px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: yellow;
+    height: inherit;
+    width: inherit;
 }
 
-li {
-    display: block;
+.nav li {
+    display: inline-block;
+    padding: 14px 16px;
+    background-color: navajowhite;
+}
+.headerli2 {
+    display: inline-block;
+    background-color: navajowhite;
+}
+
+.headerbox a {
     float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.logobox img {
+    width: 85px;
+    height: 85px;
+    display: block;
+    vertical-align: middle;
+    float: left;
+}
+
+
+.topnav {
+    overflow: hidden;
+    width: 70%;
+    float: right;
+    display: block;
+}
+.topnav2 {
+    overflow: hidden;
+    width: 70%;
+    float: left;
+    display: block;
+}
+
+.logobox {
+    height: 80px;
+    padding: 0px;
+    margin: auto;
+    display: inline-block;
+
+    float: left;
+    width: 20%;
+}
+
+.emailbox {
+    height: 80px;
+    padding: 40px;
+    margin: auto;
+    display: inline-block;
+    float: left;
+    width: 20%;
+}
+.emailbox img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    vertical-align: middle;
+    float: left;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 4px 16px;
+  text-decoration: none;
+  margin: 0px;
+}
+
+.topnav2 a {
+    display: block;
+    text-align: center;
+    padding: 4px 16px;
+    float: left;
+    text-decoration: none;
+    margin: 0px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav2 a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+div.gallery {
+    margin: 5px;
+    float: left;
+    width: 180px;
+}
+
+    div.gallery:hover {
+        border: 1px solid white;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-family: "Geologica", Geologica, serif;
+    font-weight: 400;
 }
